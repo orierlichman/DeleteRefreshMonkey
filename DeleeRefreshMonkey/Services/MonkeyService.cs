@@ -185,5 +185,9 @@ namespace DeleeRefreshMonkey.Services
         {
             return monkeys.Where(m => m.Location == location).ToList();
         }
+        public async Task<List<Monkey>> GetMonkeys()
+        {
+            return monkeys;
+        }
     }
 }
