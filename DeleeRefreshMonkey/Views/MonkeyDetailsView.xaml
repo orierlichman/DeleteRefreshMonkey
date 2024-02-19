@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DeleeRefreshMonkey.Views.MonkeyDetailsView"
              Title="MonkeyDetailsView">
+
     <VerticalStackLayout>
         <Grid Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="30">
             <Grid.RowDefinitions>
@@ -15,18 +16,18 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" Grid.Row="0"
-                       Text="{Binding SelectedStudent.FirstName}" HorizontalOptions="Center"
-                       FontAttributes="Bold"/>
+                               Text="{Binding SelectedMonkey.Name}" HorizontalOptions="Center"
+                               FontAttributes="Bold"/>
             <Label Grid.Column="0" Grid.Row="1"
-                       Text="{Binding SelectedStudent.LastName}" 
-                       FontAttributes="Bold" HorizontalOptions="Center"/>
+                               Text="{Binding SelectedMonkey.Location}" 
+                               FontAttributes="Bold" HorizontalOptions="Center"/>
             <Label Grid.Column="0" Grid.Row="2"
-                       Text="{Binding SelectedStudent.BirthDate, StringFormat='{0:MMMM dd, yyyy}'}" 
-                       FontAttributes="Italic" HorizontalOptions="Center"/>
-            <Label Grid.Column="0" Grid.Row="3"
-                       Text="{Binding SelectedStudent.AverageScore}" 
-                       FontAttributes="None" 
-                       HorizontalOptions="Center"/>
+                               Text="{Binding SelectedMonkey.Details}" 
+                               FontAttributes="Italic" HorizontalOptions="Center"/>
+            <Image Grid.Column="0" Grid.Row="3"
+                               Source="{Binding SelectedMonkey.ImageUrl}"
+                               HorizontalOptions="Center"/>
         </Grid>
     </VerticalStackLayout>
+
 </ContentPage>

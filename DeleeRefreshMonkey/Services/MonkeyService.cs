@@ -8,7 +8,7 @@ using DeleeRefreshMonkey.Services;
 
 namespace DeleeRefreshMonkey.Services
 {
-    internal class MonkeyList
+    public class MonkeyList
     {
         public List<Monkey> Monkeys { get; private set; }
         public MonkeyList()

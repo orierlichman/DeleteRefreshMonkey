@@ -1,4 +1,6 @@
-﻿namespace DeleeRefreshMonkey
+﻿using DeleeRefreshMonkey.Views;
+
+namespace DeleeRefreshMonkey
 {
     public partial class AppShell : Shell
     {
